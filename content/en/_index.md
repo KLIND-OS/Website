@@ -3,6 +3,10 @@ title: "KLIND OS"
 Description: "Arch Linux distribution with GUI that is written in JavaScript."
 ---
 
+{{< admonition type="warning" title="Archived" >}}
+This project is now archived and I'm not planning on working it. [Více informací zde](/posts/archived)
+{{< /admonition >}}
+
 # What is KLIND OS
 
 KLIND OS is Arch Linux distribution. But what is different that rest of the

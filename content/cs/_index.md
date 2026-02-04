@@ -3,6 +3,10 @@ title: "KLIND OS"
 Description: "Arch Linux distribuce s GUI napsaným v JavaScriptu."
 ---
 
+{{< admonition type="warning" title="Archivováno" >}}
+Tento projekt byl nyní archivován a neplánuji na něm pracovat. [Více informací zde](/cs/posts/archived)
+{{< /admonition >}}
+
 # Co je to KLIND OS
 
 KLIND OS je Arch Linux distribuce. Ale co se liší od ostatních distribucí založených na Arch?

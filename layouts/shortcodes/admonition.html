@@ -1,0 +1,78 @@
+{{ $type := .Get "type" | default "note" }}
+{{ $title := .Get "title" | default (print (title $type)) }}
+
+<div class="alert alert-{{ $type }}">
+  <div class="alert-title">
+    {{ $title }}
+  </div>
+
+  <div class="alert-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
+
+<style>
+.alert {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid;
+  border-radius: 0.5rem;
+  background-color: #191919;
+  color: #ebebeb;
+}
+
+/* Title */
+.alert-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+}
+
+.alert-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.alert-content p {
+  margin: 0.5em 0;
+}
+
+.alert-content a {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+.alert-content code {
+  background: #2a2a2a;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.alert-content pre {
+  background: #111;
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.alert-note {
+  border-color: #31929A;
+}
+
+.alert-warning {
+  border-color: #eab308;
+}
+
+.alert-danger {
+  border-color: #ef4444;
+}
+
+.alert-success {
+  border-color: #22c55e;
+}
+</style>
